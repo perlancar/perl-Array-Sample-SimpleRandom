@@ -63,6 +63,13 @@ Bool. If set to true, function will return positions instead of the items.
 =back
 
 
+=head1 FAQ
+
+=head2 Why no sample_simple_random_with_replacement?
+
+This kind of sampling does not require scanning algorithm.
+
+
 =head1 SEE ALSO
 
 L<Array::Sample::SimpleRandom>
