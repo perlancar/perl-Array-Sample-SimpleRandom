@@ -16,8 +16,8 @@ our @EXPORT_OK = qw(sample_simple_random_no_replacement);
 sub sample_simple_random_no_replacement {
     require Array::Pick::Scan;
 
-    my ($ary, $n) = @_;
-    Array::Pick::Scan::random_item($ary, $n);
+    my ($ary, $n, $opts) = @_;
+    Array::Pick::Scan::random_item($ary, $n, $opts);
 }
 
 1;
@@ -43,7 +43,7 @@ sub sample_simple_random_no_replacement {
 
 Usage:
 
- my @items = sample_simple_random_no_replacement(\@ary, $n);
+ my @items = sample_simple_random_no_replacement(\@ary, $n [ , \%opts ]);
 
 This function takes an array reference (C<\@ary>) and the number of samples
 requested (C<$n>) and will return a list of elements. Samples will be picked
@@ -53,6 +53,14 @@ duplicate values).
 
 This function is the same as the one in L<Array::Sample::SimpleRandom>, except
 that it uses a scan algorithm from L<Array::Pick::Scan>.
+
+=over
+
+=item * pos
+
+Bool. If set to true, function will return positions instead of the items.
+
+=back
 
 
 =head1 SEE ALSO
