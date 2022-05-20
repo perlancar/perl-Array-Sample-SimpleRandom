@@ -35,14 +35,14 @@ sub sample_simple_random_no_replacement {
 
     $n = @$ary if $n > @$ary;
     my @ary_copy = @$ary;
-    my @indexes  = 0 .. $#ary_copy;
+    my @pos      = 0 .. $#ary_copy;
 
     my @res;
     for my $i (1..$n) {
         my $idx = int(rand(@ary_copy));
-        push @res, $opts->{pos} ? $indexes[$idx] : $ary_copy[$idx];
+        push @res, $opts->{pos} ? $pos[$idx] : $ary_copy[$idx];
         splice @ary_copy, $idx, 1;
-        splice @indexes , $idx, 1;
+        splice @pos     , $idx, 1;
     }
 
     @res;

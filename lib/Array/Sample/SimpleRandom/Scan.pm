@@ -17,7 +17,7 @@ sub sample_simple_random_no_replacement {
     require Array::Pick::Scan;
 
     my ($ary, $n) = @_;
-    use DD; dd Array::Pick::Scan::random_item($ary, $n);
+    Array::Pick::Scan::random_item($ary, $n);
 }
 
 1;
