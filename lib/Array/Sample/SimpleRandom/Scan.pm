@@ -59,4 +59,5 @@ that it uses a scan algorithm from L<Array::Pick::Scan>.
 
 L<Array::Sample::SimpleRandom>
 
-Other sampling methods: L<Array::Sample::Partition>, L<Array::Sample::SysRand>.
+Other sampling methods: L<Array::Sample::Partition>, L<Array::Sample::SysRand>,
+L<Array::Sample::WeightedRandom>.

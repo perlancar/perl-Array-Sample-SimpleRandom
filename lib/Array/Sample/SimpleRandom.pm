@@ -115,7 +115,8 @@ once; see L<Array::Sample::SimpleRandom::Scan>.
 
 =head1 SEE ALSO
 
-Other sampling methods: L<Array::Sample::SysRand>, L<Array::Sample::Partition>.
+Other sampling methods: L<Array::Sample::SysRand>, L<Array::Sample::Partition>,
+L<Array::Sample::WeightedRandom>.
 
 L<Array::Sample::SimpleRandom::Scan>
 
